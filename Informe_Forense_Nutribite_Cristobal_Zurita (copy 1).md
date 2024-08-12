@@ -655,10 +655,8 @@ Se realizó una evaluación de la madurez de seguridad de Nutribite utilizando e
 | Respuesta a Incidentes         | 1                      |
 | Gestión de la Cadena de Suministro | 2                  |
 | Gestión de Vulnerabilidades    | 1                      |
-```
-
-
 ---
+
 
 ### 11. Conclusiones
 
