@@ -1,9 +1,10 @@
-<p align="center">
-  <img src="images.png" alt="Logo 1" width="100" height="auto">
-  <img src="gobmex.png" alt="Logo GobMex" width="150" height="auto">
-  <img src="chile.jpg" alt="Logo Chile" width="100" height="auto">
-</p>
----
+<div style="text-align: center;">
+    <img src="images.png" alt="Logo 1" style="width:60px; height:auto; vertical-align: middle; margin-right: 10px;">
+    <img src="gobmex.png" alt="Logo 2" style="width:200px; height:auto; vertical-align: middle; margin-right: 10px;">
+    <img src="chile.jpg" alt="Logo 3" style="width:80px; height:auto; vertical-align: middle;">
+</div>
+
+
 
 # Informe Forense: Análisis de Ataque Cibernético a Infraestructura Crítica de Nutribite
 
