@@ -1,14 +1,15 @@
 <div style="text-align: center;">
-    <img src="/Nutribite_informe_md_C_Zurita/images.png" alt="Logo 1" style="width:60px; height:auto; vertical-align: middle;">
-    <img src="/Nutribite_informe_md_C_Zurita/gobmex.png" alt="Logo 2" style="width:200px; height:auto; vertical-align: middle;">
-    <img src="/Nutribite_informe_md_C_Zurita/chile.jpg" alt="Logo 3" style="width:80px; height:auto; vertical-align: middle;">
+    <img src="images.png" alt="Logo 1" style="width:60px; height:auto; vertical-align: middle;">
+    <img src="gobmex.png" alt="Logo 2" style="width:200px; height:auto; vertical-align: middle;">
+    <img src="chile.jpg" alt="Logo 3" style="width:80px; height:auto; vertical-align: middle;">
 </div>
+
 
 # Informe Forense: Análisis de Ataque Cibernético a Infraestructura Crítica de Nutribite
 
 ## Portada
 
-<img src="/Nutribite_informe_md_C_Zurita/analitica.png" width="50%" height="50%" style="display: block; margin: 0 auto;">
+<img src="analitica.png" width="50%" height="50%" style="display: block; margin: 0 auto;">
 
 - **Nombre de la Organización:** Analítica Forense SPA
 - **Análisis Forense de Incidente de Seguridad Cibernética**
@@ -19,7 +20,7 @@
 - **Fecha del Incidente:** 01/08/2024
 - **Fecha de Elaboración del Informe:** 12/08/2024
 
-<img src="/Nutribite_informe_md_C_Zurita/NutribiteLogo.png" width="50%" height="50%" style="display: block; margin: 0 auto;">
+<img src="NutribiteLogo.png" width="50%" height="50%" style="display: block; margin: 0 auto;">
 
 **Autores:**
 - **Nombre Completo y Cargo:** Cristóbal Nicolás Zurita Quintanilla
@@ -165,10 +166,10 @@ Durante el análisis del tráfico de red capturado con Wireshark, se identificar
 - **Conexión Sospechosa:** Se observó una conexión continua desde la IP 192.168.94.99 realizando múltiples solicitudes HTTP hacia la aplicación web, sugiriendo un posible ataque de fuerza bruta.
 - **Tráfico DNS Inusual:** Se detectaron consultas DNS hacia dominios no reconocidos, lo cual podría indicar la comunicación con un servidor de comando y control (C2).
 
-<img src="/Nutribite_informe_md_C_Zurita/wireshark1.png" width="80%" height="50%" style="display: block; margin: 0 auto;">
+<img src="wireshark1.png" width="80%" height="50%" style="display: block; margin: 0 auto;">
 <br>
 
-<img src="/Nutribite_informe_md_C_Zurita/wireshark2.png" width="80%" height="50%" style="display: block; margin: 0 auto;">
+<img src="wireshark2.png" width="80%" height="50%" style="display: block; margin: 0 auto;">
 
 **Gráfico de Secuencia del Ataque:**
 
