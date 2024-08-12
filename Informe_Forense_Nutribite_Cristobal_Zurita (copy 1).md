@@ -250,26 +250,27 @@ graph TD
     style D fill:#6f9,stroke:#333,stroke-width:2px;
 ```
 
-### 3.1 Línea de Tiempo del Ataque
 
+### 1. **Línea de Tiempo del Ataque**
 ```mermaid
-timeline
+gantt
     title Línea de Tiempo del Ataque
+    dateFormat  YYYY-MM-DD HH:mm
     section Fase de Reconocimiento
-        01-08-2024 09:00 : Escaneo de puertos
-        01-08-2024 09:30 : Enumeración de servicios
+    Escaneo de puertos            :done, 2024-08-01 09:00, 30min
+    Enumeración de servicios      :done, 2024-08-01 09:30, 30min
     section Fase de Explotación
-        01-08-2024 10:00 : Inyección SQL inicial
-        01-08-2024 10:15 : Acceso no autorizado obtenido
+    Inyección SQL inicial         :active, 2024-08-01 10:00, 15min
+    Acceso no autorizado obtenido :active, 2024-08-01 10:15, 45min
     section Fase de Persistencia
-        01-08-2024 11:00 : Instalación de RAT
-        01-08-2024 11:30 : Configuración de backdoor
+    Instalación de RAT            :active, 2024-08-01 11:00, 30min
+    Configuración de backdoor     :active, 2024-08-01 11:30, 90min
     section Fase de Exfiltración
-        01-08-2024 14:00 : Inicio de extracción de datos
-        01-08-2024 16:30 : Finalización de extracción
+    Inicio de extracción de datos :active, 2024-08-01 14:00, 2h 30min
+    Finalización de extracción    :done, 2024-08-01 16:30, 30min
     section Fase de Encubrimiento
-        01-08-2024 17:00 : Borrado de logs
-        01-08-2024 17:30 : Modificación de timestamps
+    Borrado de logs               :done, 2024-08-01 17:00, 30min
+    Modificación de timestamps    :done, 2024-08-01 17:30, 30min
 ```
 
 ---
@@ -363,22 +364,22 @@ graph TD
 - Algunos archivos críticos tenían timestamps manipulados para ocultar la actividad del atacante.
 
 #### 5.4 Cronología de Eventos
-
 ```mermaid
-timeline
+gantt
     title Cronología del Ataque
+    dateFormat  YYYY-MM-DD HH:mm
     section Fase Inicial
-        2024-08-01 10:15: Primera inyección SQL detectada
-        2024-08-01 10:30: Acceso no autorizado al panel de administración
+    Primera inyección SQL detectada          :done, 2024-08-01 10:15, 15min
+    Acceso no autorizado al panel de administración :done, 2024-08-01 10:30, 30min
     section Propagación
-        2024-08-01 11:00: Descarga de malware RAT
-        2024-08-01 11:30: Establecimiento de conexión C2
+    Descarga de malware RAT                  :active, 2024-08-01 11:00, 30min
+    Establecimiento de conexión C2           :active, 2024-08-01 11:30, 120min
     section Exfiltración
-        2024-08-01 14:00: Inicio de extracción de datos de usuarios
-        2024-08-01 16:30: Finalización de extracción de datos
+    Inicio de extracción de datos de usuarios :active, 2024-08-01 14:00, 2h 30min
+    Finalización de extracción de datos       :done, 2024-08-01 16:30, 30min
     section Encubrimiento
-        2024-08-01 17:00: Intento de borrado de logs
-        2024-08-01 17:30: Modificación de timestamps en archivos críticos
+    Intento de borrado de logs               :done, 2024-08-01 17:00, 30min
+    Modificación de timestamps en archivos críticos :done, 2024-08-01 17:30, 30min
 ```
 
 ### 5.5 Análisis de Impacto
@@ -532,17 +533,18 @@ graph TD
 **Línea de Tiempo de la Actividad Sospechosa:**
 
 ```mermaid
-timeline
+gantt
     title Línea de Tiempo de la Actividad Sospechosa
+    dateFormat  HH:mm
     section Inyección SQL
-      10:00: Inicio del Ataque: Solicitudes SQL a través de inyecciones
+    Inicio del Ataque: Solicitudes SQL       :done, 10:00, 5min
     section Respuesta del Servidor
-      10:05: Respuesta del Servidor Web a las solicitudes
-      10:07: Conexión con C&C
+    Respuesta del Servidor Web               :done, 10:05, 2min
+    Conexión con C&C                         :active, 10:07, 3min
     section Descarga de Malware
-      10:10: Descarga de Malware desde el C&C
+    Descarga de Malware desde el C&C         :done, 10:10, 5min
     section Extracción de Datos
-      10:15: Extracción de datos sensibles de la Base de Datos
+    Extracción de datos sensibles de la Base de Datos :active, 10:15, 5min
 ```
 
 ---
@@ -640,18 +642,19 @@ gantt
 
 ### 10.5 Evaluación de Madurez de Seguridad
 
-Se realizó una evaluación de la madurez de seguridad de Nutribite utilizando el modelo de Capacidad de Madurez de Seguridad Cibernética (C2M2):
 
-```mermaid
-radar
-    title Nivel de Madurez de Seguridad
-    Gestión de Riesgos: 2
-    Control de Acceso: 1
-    Gestión de Activos: 3
-    Gestión de Amenazas: 2
-    Respuesta a Incidentes: 1
-    Gestión de la Cadena de Suministro: 2
-    Gestión de Vulnerabilidades: 1
+
+Se realizó una evaluación de la madurez de seguridad de Nutribite utilizando el modelo de Capacidad de Madurez de Seguridad Cibernética (C2M2). A continuación, se muestran los resultados:
+
+| Área de Seguridad              | Nivel de Madurez (1-5) |
+|--------------------------------|------------------------|
+| Gestión de Riesgos             | 2                      |
+| Control de Acceso              | 1                      |
+| Gestión de Activos             | 3                      |
+| Gestión de Amenazas            | 2                      |
+| Respuesta a Incidentes         | 1                      |
+| Gestión de la Cadena de Suministro | 2                  |
+| Gestión de Vulnerabilidades    | 1                      |
 ```
 
 
@@ -694,6 +697,36 @@ El impacto potencial en futuros proyectos de seguridad es considerable, subrayan
 - Tiempo medio de detección de amenazas
 - Número de vulnerabilidades críticas no parcheadas
 - Tasa de éxito en pruebas de penetración periódicas
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
