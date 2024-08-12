@@ -1,6 +1,11 @@
 ![Logo 1](images.png)
 ![Logo GobMex](gobmex.png)
 ![Logo Chile](chile.jpg)
+<div style="text-align: center;">
+    <img src="images.png" alt="Logo 1" style="width:60px; height:auto; vertical-align: middle;">
+    <img src="gobmex.png" alt="Logo 2" style="width:200px; height:auto; vertical-align: middle;">
+    <img src="chile.jpg" alt="Logo 3" style="width:80px; height:auto; vertical-align: middle;">
+</div>
 ---
 
 # Informe Forense: Análisis de Ataque Cibernético a Infraestructura Crítica de Nutribite
